@@ -14,9 +14,13 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**Theory**
+**Theory** 
+
+Boolean function minimization is the process of simplifying complex Boolean expressions to their most efficient form while preserving their logical function. The goal is to reduce the number of logic gates, literals, and wiring needed for implementation in digital circuits, leading to lower costs, improved speed, and reduced power consumption.
 
 **Logic Diagram**
+
+<img width="800" height="241" alt="image" src="https://github.com/user-attachments/assets/3d686e30-6ef6-46d3-812e-b94e3ac4aed5" />
 
 **Procedure**
 
@@ -32,19 +36,28 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+~~~~
+module DAY5(a,b,c,d,f1,w,x,y,z,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
-
+~~~~
 
 **RTL realization**
 
 **Output:**
 
-**RTL**
+**RTL** 
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/843afde2-77e9-45b1-a381-d1a41c0db399" />
+
 
 **Timing Diagram**
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0864180f-3bac-4d95-a3a8-0bda8f918fe5" />
 
 **Result:**
 
